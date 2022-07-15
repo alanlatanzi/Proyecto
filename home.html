@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Integrador</title>
+    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/img/logo2.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="portada">
+            <div class="textos">
+                <h1>DESARROLLAMOS</h1>
+                <h1>MÚSICA CON</h1>
+                <h1 class="textos-orange">EXCELENCIA PARA</h1>
+                <h1 class="mb-5">IMPULSAR TU CARRERA</h1>
+                <a href="#mas" class="orange-button">Conoce más</a>
+            </div>
+        </div>
+        <div id="mas"></div>
+        <div class="next">
+            <h1>¿POR QUÉ ESCOGERNOS?</h1>
+            <h2>CONTAMOS CON LOS MEJORES ESTUDIOS Y LOS PROFESIONALES MAS CAPACITADOS</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
+                style="width: 80%; margin: 0 auto">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/grabacion1.webp" class="d-block w-100 picture" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/grabacion2.webp" class="d-block w-100 picture" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/grabacion3.jpg" class="d-block w-100 picture" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/grabacion4.jpg" class="d-block w-100 picture" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        live the music 2022 - Todos los derechos reservados
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function () {
+            // GET SCROLL POSITION
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 100) {
+                    $('.navbar').addClass('navbar-black');
+                } else {
+                    $('.navbar').removeClass('navbar-black');
+                }
+
+            });
+        });
+    </script>
+</body>
+
+</html>
