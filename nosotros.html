@@ -18,10 +18,10 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="body-nosotros">
+<body class="body-nosotros" style="background-image: url('img/wallpaper2.png')">
     <nav class="navbar navbar-dark fixed-top navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="/img/logo2.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="img/logo2.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -125,7 +125,9 @@
         </div>
     </main>
 
-
+    <footer>
+        live the music 2022 - Todos los derechos reservados
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- JavaScript Bundle with Popper -->
@@ -135,7 +137,18 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
+        $(document).ready(function () {
+            // GET SCROLL POSITION
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 100) {
+                    $('.navbar').addClass('navbar-black');
+                } else {
+                    $('.navbar').removeClass('navbar-black');
+                }
 
+            });
+        });
     </script>
 
 </body>

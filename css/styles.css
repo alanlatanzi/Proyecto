@@ -28,7 +28,6 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(74,74,74,1) 53%, rgba
 
 .portada {
     height: 100vh;
-    background-image: url('/img/wallpaper2.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
@@ -39,7 +38,6 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(74,74,74,1) 53%, rgba
 }
 
 .body-nosotros {
-    background-image: url('/img/wallpaper2.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
@@ -344,7 +342,13 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(74,74,74,1) 53%, rgba
 .servicio:hover {
     background-color: var(--orange);
 }
-
+@media (min-width: 768px) {
+    .footer-servicios,.footer-contacto{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
 @media (max-width: 768px) {
     .servicios-container {
         grid-template-columns: repeat(1, 1fr);
