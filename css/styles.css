@@ -318,6 +318,7 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(74,74,74,1) 53%, rgba
 .servicio .number h2 {
     font-size: 45px;
     color: rgb(155, 155, 155);
+    transition: all .5s ease-in-out;
 }
 
 .servicio i {
@@ -341,6 +342,10 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(74,74,74,1) 53%, rgba
 .description-service:hover,
 .servicio:hover {
     background-color: var(--orange);
+}
+
+.servicio:hover h2{
+    color: white;
 }
 @media (min-width: 768px) {
     .footer-servicios,.footer-contacto{
@@ -415,3 +420,25 @@ footer {
 }
 
 /* FIN FOOTER */
+
+.variables{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    color: white;
+}
+.variables h3{
+    font-size: 18px;
+}
+#usuario{
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+#usuario:hover{
+    color: var(--yellow);
+}
